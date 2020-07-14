@@ -1,0 +1,14 @@
+import math,random
+
+#function to genrating OTP
+def generateotp():
+    digit="0123456789"
+    OTP=""
+
+    for i in range(4):
+        OTP +=digit[math.floor(random.random() *10)]
+        #OTP +=str(random.randint(1,9))
+    return OTP
+
+if __name__ == "__main__":
+    print("your OTP ",generateotp())
