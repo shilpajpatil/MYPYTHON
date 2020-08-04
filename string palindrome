@@ -1,0 +1,15 @@
+#Python program to check if a string is palindrome or not
+
+def main():
+    str=input("enter a string:")
+    print(str)
+    ans=chekpalindrome(str)
+    if (ans==str):
+        print("string palindrome")
+    else:
+        print("not a palindrome")
+def chekpalindrome(str):
+    return str[::-1]
+
+if __name__ == "__main__":
+    main()
