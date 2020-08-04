@@ -1,0 +1,21 @@
+#Reverse words in a given String in Python
+
+def main():
+    str=input("enter a string:")
+    result=reverse(str)
+    print("reverse string:",result)
+    res=word(str)
+
+    print("reverse string:",res)
+
+
+def reverse(str):
+    return(str[::-1])
+
+def word(str):
+    words=str.split('')
+    print(words)
+    res=(''.join(reversed(words)))
+    return(res)
+if __name__ == "__main__":
+    main()
