@@ -1,0 +1,22 @@
+#Ways to remove i’th character from string in Python
+
+def main():
+    str=input("enter a string:")
+    print(str)
+    i=int(input("enter a index of a string to remove char:"))
+    print("remove",i ,"th char:")
+
+    res=removechar(i,str)
+
+    print("after removing character:",res)
+
+def removechar(i,str):
+    new_str=""
+    for j in range(len(str)):
+        if j != i:
+            new_str = new_str + str[j]
+    
+        #print(j)
+    return(new_str)
+if __name__== "__main__":
+    main()
