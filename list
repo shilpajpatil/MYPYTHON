@@ -1,0 +1,15 @@
+#Reverse a list
+
+def main():
+    a=[2,6,4,7]
+
+    a.insert(1,8)
+    a.insert(5,'a')
+    print(a)
+    lst=rev(a)
+    print("reverse list:",lst)
+
+def rev(a):
+    return(a[::-1])
+if __name__ == "__main__":
+    main()
